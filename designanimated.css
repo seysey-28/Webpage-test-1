@@ -1,0 +1,144 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #87CEEB;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #228B22;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid #8B4513;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.column {
+    background-color: #FFE4B5;
+    border: 5px solid #8B4513; 
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #228B22;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px #6B8E23;
+}
+
+p, ul {
+    color: #8B4513;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 80%;
+    height: auto;
+    border: 4px solid #6B8E23;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #8B4513;
+}
+
+/* animations */
+
+.column {
+    background-color: #FFE4B5;
+    border: 5px solid #8B4513; 
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.column:hover {
+    transform: scale(1.1); 
+}
+
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #87CEEB;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #228B22;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid #8B4513;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideInTop 1s ease forwards;
+}
+
+footer {
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #8B4513;
+    animation: slideInBottom 1s ease forwards;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
